@@ -10,10 +10,10 @@
 
     <Button
         android:id="@+id/button2"
-        android:onClick="openActivity"
-        android:layout_width="268dp"
-        android:layout_height="162dp"
-        android:text="@string/deschide_activitate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inapoi"
+        android:onClick="intoarceInActivitate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
