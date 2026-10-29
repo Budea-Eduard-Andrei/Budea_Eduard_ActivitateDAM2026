@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Activitate_seminar4</string>
+    <string name="adauga_baterie">Adauga Baterie</string>
+    <string name="marca_bateriei">Marca bateriei</string>
+    <string name="introduceti_datele_bateriei">Introduceti datele bateriei</string>
+    <string-array name="baterii">
+        <item>Hama</item>
+        <item>Samsung</item>
+        <item>Xiaomi</item>
+        <item>Apple</item>
+    </string-array>
+</resources>
