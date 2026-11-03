@@ -1,12 +1,13 @@
 package com.example.activitate_seminar4;
 
-import java.io.Serializable;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-public class Baterie implements Serializable {
+public class Baterie implements Parcelable {
+
     private String marca;
     private int capacitate;
     private boolean esteReincarcabila;
-
     private String putereIncarcare;
 
     public Baterie(String marca, int capacitate, boolean esteReincarcabila) {
@@ -14,6 +15,25 @@ public class Baterie implements Serializable {
         this.capacitate = capacitate;
         this.esteReincarcabila = esteReincarcabila;
     }
+
+    protected Baterie(Parcel in) {
+        marca = in.readString();
+        capacitate = in.readInt();
+        esteReincarcabila = in.readByte() != 0;
+        putereIncarcare = in.readString();
+    }
+
+    public static final Creator<Baterie> CREATOR = new Creator<Baterie>() {
+        @Override
+        public Baterie createFromParcel(Parcel in) {
+            return new Baterie(in);
+        }
+
+        @Override
+        public Baterie[] newArray(int size) {
+            return new Baterie[size];
+        }
+    };
 
     public String getMarca() {
         return marca;
@@ -31,25 +51,21 @@ public class Baterie implements Serializable {
         return esteReincarcabila;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    @Override
+    public int describeContents() {
+        return 0;
     }
 
-    public void setCapacitate(int capacitate) {
-        this.capacitate = capacitate;
-    }
-
-    public void setPutereIncarcare(String putereIncarcare) {
-        this.putereIncarcare = putereIncarcare;
-    }
-
-    public void setEsteReincarcabila(boolean esteReincarcabila) {
-        this.esteReincarcabila = esteReincarcabila;
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(marca);
+        dest.writeInt(capacitate);
+        dest.writeByte((byte) (esteReincarcabila ? 1 : 0));
+        dest.writeString(putereIncarcare);
     }
 
     @Override
     public String toString() {
         return "Baterie " + marca + " - Capacitate: " + capacitate + "mAh (Fast charge: " + (esteReincarcabila ? "Da" : "Nu") + ")";
     }
-
 }

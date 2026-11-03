@@ -4,16 +4,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
 public class ListaBaterii extends AppCompatActivity {
+
+    private ArrayList<Baterie> listaPrimita = null;
+    private BaterieAdapter adapter = null;
+    private int idModificat = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,17 +29,19 @@ public class ListaBaterii extends AppCompatActivity {
         Intent intent = getIntent();
 
         if (intent != null && intent.hasExtra("lista_baterii")) {
-            ArrayList<Baterie> listaPrimita = (ArrayList<Baterie>) intent.getSerializableExtra("lista_baterii");
+            listaPrimita = intent.getParcelableArrayListExtra("lista_baterii");
 
             if (listaPrimita != null) {
-                ArrayAdapter<Baterie> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listaPrimita);
+                adapter = new BaterieAdapter(this, R.layout.layoutlistview, listaPrimita);
                 listView.setAdapter(adapter);
 
                 listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        Baterie baterieSelectata = listaPrimita.get(position);
-                        Toast.makeText(ListaBaterii.this, baterieSelectata.toString(), Toast.LENGTH_LONG).show();
+                        Intent intentModifica = new Intent(ListaBaterii.this, AdaugaBaterie.class);
+                        intentModifica.putExtra("obiect_baterie", listaPrimita.get(position));
+                        idModificat = position;
+                        startActivityForResult(intentModifica, 2);
                     }
                 });
 
@@ -57,5 +63,20 @@ public class ListaBaterii extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 2 && resultCode == RESULT_OK && data != null) {
+            Baterie baterieModificata = data.getParcelableExtra("obiect_baterie");
+
+            if (baterieModificata != null && idModificat != -1) {
+                listaPrimita.set(idModificat, baterieModificata);
+                adapter.notifyDataSetChanged();
+                Toast.makeText(this, "Baterie modificată cu succes!", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 }

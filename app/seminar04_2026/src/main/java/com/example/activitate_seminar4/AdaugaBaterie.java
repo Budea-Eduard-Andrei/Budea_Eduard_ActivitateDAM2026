@@ -27,15 +27,32 @@ public class AdaugaBaterie extends AppCompatActivity {
             return insets;
         });
 
+        EditText etMarca = findViewById(R.id.nume_ET);
+        Switch switchFastCharge = findViewById(R.id.nume_SW);
+        Spinner spinnerCapacitate = findViewById(R.id.spinnerCapacitate);
         Button btnSalveaza = findViewById(R.id.btnSalveazaDate);
+
+        Intent intent = getIntent();
+        if (intent != null && intent.hasExtra("obiect_baterie")) {
+            Baterie bateriePrimita = intent.getParcelableExtra("obiect_baterie");
+
+            if (bateriePrimita != null) {
+                etMarca.setText(bateriePrimita.getMarca());
+                switchFastCharge.setChecked(bateriePrimita.isEsteReincarcabila());
+
+                String capacitateCurenta = String.valueOf(bateriePrimita.getCapacitate());
+                for (int i = 0; i < spinnerCapacitate.getCount(); i++) {
+                    if (spinnerCapacitate.getItemAtPosition(i).toString().equals(capacitateCurenta)) {
+                        spinnerCapacitate.setSelection(i);
+                        break;
+                    }
+                }
+            }
+        }
 
         btnSalveaza.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText etMarca = findViewById(R.id.nume_ET);
-                Switch switchFastCharge = findViewById(R.id.nume_SW);
-                Spinner spinnerCapacitate = findViewById(R.id.spinnerCapacitate);
-
                 String marca = etMarca.getText().toString();
                 boolean areFastCharge = switchFastCharge.isChecked();
 
