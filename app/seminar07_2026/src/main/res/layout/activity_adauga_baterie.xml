@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AdaugaBaterie">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Introduceți datele bateriei externe:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/nume_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Marca (ex: Hama)"
+        android:layout_marginBottom="8dp"/>
+
+    <Switch
+        android:id="@+id/nume_SW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suportă Fast Charging?"
+        android:layout_marginBottom="8dp"/>
+
+    <CheckBox
+        android:id="@+id/nume_CB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cablu de încărcare inclus"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tip port ieșire principal:" />
+
+    <RadioGroup
+        android:id="@+id/rgTipBaterie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <RadioButton
+            android:id="@+id/rbUsbA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USB-A" />
+        <RadioButton
+            android:id="@+id/rbUsbC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type-C" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capacitate:" />
+
+    <Spinner
+        android:id="@+id/spinnerCapacitate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/capacitati_powerbank" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Evaluați calitatea:" />
+
+    <RatingBar
+        android:id="@+id/ratingBarCalitate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnSalveazaDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvează Powerbank-ul" />
+
+
+</LinearLayout>

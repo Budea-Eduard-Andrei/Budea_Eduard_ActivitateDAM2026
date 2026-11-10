@@ -23,4 +23,14 @@
         android:text="Vezi lista baterii"
         android:layout_marginTop="16dp"/>
 
+    <Button
+        android:id="@+id/btnDeschideImagini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vezi Imagini Online"
+        android:layout_marginTop="16dp"/>
+
+
+
+
 </LinearLayout>

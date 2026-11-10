@@ -40,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btnDeschideImagini = findViewById(R.id.btnDeschideImagini);
+        btnDeschideImagini.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListaImagini.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void AdaugaBaterie(View view) {

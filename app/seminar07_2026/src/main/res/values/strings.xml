@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Activitate_seminar4</string>
+    <string name="adauga_baterie">Adauga Baterie</string>
+    <string name="marca_bateriei">Marca bateriei</string>
+    <string name="introduceti_datele_bateriei">Introduceti datele bateriei</string>
+    <string-array name="capacitati_powerbank">
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+    </string-array>
+</resources>
