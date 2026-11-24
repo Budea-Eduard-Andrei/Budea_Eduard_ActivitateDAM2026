@@ -25,7 +25,7 @@ import java.util.concurrent.Executors;
 
 public class VremeActivity extends AppCompatActivity {
 
-    private static final String API_KEY = "CHEIE SA N O FURATI";
+    private static final String API_KEY = "Nu mi furi cheia";
 
     private EditText etOras;
     private Spinner spZile;
