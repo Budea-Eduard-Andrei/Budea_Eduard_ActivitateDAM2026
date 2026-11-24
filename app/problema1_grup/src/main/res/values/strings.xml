@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">problema1_grup</string>
+    <string name="adauga_incarcator">Adauga incarcator</string>
+    <string name="id_incarcator">Id incarcator</string>
+    <string name="introdu_pretul">Introdu pretul</string>
+    <string name="incarcator_alb">Incarcator Alb</string>
+    <string name="incarcator_negru">Incarcator Negru</string>
+    <string name="salveaza_incarcatorul">Salveaza Incarcatorul</string>
+    <string name="alege_producator">Alege producator</string>
+    <string name="alege_culoarea_incarcatorului">Alege culoarea incarcatorului</string>
+
+    <string-array name="lista_producatori">
+        <item>Samsung</item>
+        <item>Apple</item>
+        <item>Xiaomi</item>
+    </string-array>
+
+</resources>

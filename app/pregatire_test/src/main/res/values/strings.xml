@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">pregatire_test</string>
+    <string name="btn_adauga_cutie">Adauga cutie noua</string>
+    <string name="btn_salvare_cutie">Salveaza cutia</string>
+    <string name="introdu_codul_cutiei">Introdu codul cutiei</string>
+    <string name="introdu_volumul_cutiei">Introdu volumul cutiei</string>
+    <string name="este_fragil">Este fragil?</string>
+</resources>

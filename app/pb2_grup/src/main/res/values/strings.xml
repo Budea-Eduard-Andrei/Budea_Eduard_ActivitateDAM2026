@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">pb2_grup</string>
+    <string name="adauga_tableta">Adauga tableta</string>
+    <string name="are_wireless_charging">Are wireless charging?</string>
+    <string name="selecteaza_modelul_tabletei">Selecteaza modelul tabletei</string>
+    <string name="precizeaza_memorie">Precizeaza memorie</string>
+    <string name="precizeaza_id_tableta">Precizeaza id Tableta</string>
+    <string name="salveaza_tableta">Salveaza tableta</string>
+    <string name="lista_tablete">Lista Tablete</string>
+    <string-array name="lista_modele">
+        <item>Apple</item>
+        <item>Samsung</item>
+    </string-array>
+</resources>

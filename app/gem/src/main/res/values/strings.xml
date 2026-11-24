@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">gem</string>
+    <string name="adauga_laptop">Adauga Laptop</string>
+    <string name="salveaza_laptopul">Salveaza Laptopul</string>
+    <string name="alege_modelul_procesorului">Alege modelul procesorului:</string>
+    <string name="suporta_gaming">Suporta gaming?</string>
+    <string name="specifica_pretul_in_lei">Specifica pretul in lei</string>
+    <string name="specifica_id_ul">Specifica Id ul</string>
+    <string name="vezi_lista">Vezi lista</string>
+    <string-array name="lista_procesoare">
+        <item>Intel</item>
+        <item>AMD</item>
+    </string-array>
+</resources>

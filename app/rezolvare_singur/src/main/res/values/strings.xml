@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">rezolvare_singur</string>
+    <string name="adauga_cutie">Adauga cutie</string>
+    <string name="introdu_codul_cutiei">Introdu codul cutiei</string>
+    <string name="introdu_volumul_cutiei">Introdu volumul cutiei</string>
+    <string name="este_fragil">Este fragil?</string>
+    <string name="salveaza_cutia">Salveaza Cutia</string>
+</resources>

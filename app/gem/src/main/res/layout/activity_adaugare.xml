@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdaugareActivity">
+
+    <EditText
+        android:id="@+id/budea_eduard_et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/specifica_id_ul"/>
+
+    <EditText
+        android:id="@+id/budea_eduatd_et_pret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/specifica_pretul_in_lei"/>
+
+    <Switch
+        android:id="@+id/budea_eduard_switch_gaming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/suporta_gaming"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/alege_modelul_procesorului"/>
+    <Spinner
+        android:id="@+id/budea_eduard_spinner_procesor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/lista_procesoare"
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:id="@+id/budea_eduard_btn_salveaza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/salveaza_laptopul"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">gem3</string>
+    <string name="adauga_zbor">Adauga Zbor</string>
+    <string name="romania">Romania</string>
+    <string name="spania">Spania</string>
+    <string name="bali">Bali</string>
+    <string name="asigura_cazare">Asigura cazare?</string>
+    <string name="precizeaza_pret">Precizeaza Pret</string>
+    <string name="precizeaza_id">Precizeaza ID</string>
+    <string name="selecteaza_destinatia">Selecteaza destinatia:</string>
+    <string name="salveaza_zborul">Salveaza Zborul</string>
+    <string name="vezi_lista">Vezi lista</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">gem2</string>
+    <string name="adauga_masina">Adauga masina</string>
+    <string name="salveaza_masina">Salveaza Masina</string>
+    <string name="ofera_rating">Ofera Rating</string>
+    <string name="are_asigurare">Are asigurare?</string>
+    <string name="precizeaza_marca">Precizeaza Marca</string>
+    <string name="precizeaza_id_ul">Precizeaza id ul</string>
+    <string name="lista_maisni">Lista Maisni</string>
+</resources>

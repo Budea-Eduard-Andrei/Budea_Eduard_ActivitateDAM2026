@@ -10,6 +10,15 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app/gem" />
+            <option value="$PROJECT_DIR$/app/gem2" />
+            <option value="$PROJECT_DIR$/app/gem3" />
+            <option value="$PROJECT_DIR$/app/gem4" />
+            <option value="$PROJECT_DIR$/app/pb2_grup" />
+            <option value="$PROJECT_DIR$/app/poza3" />
+            <option value="$PROJECT_DIR$/app/pregatire_test" />
+            <option value="$PROJECT_DIR$/app/problema1_grup" />
+            <option value="$PROJECT_DIR$/app/rezolvare_singur" />
             <option value="$PROJECT_DIR$/app/seminar02_2026" />
             <option value="$PROJECT_DIR$/app/seminar04_2026" />
           </set>

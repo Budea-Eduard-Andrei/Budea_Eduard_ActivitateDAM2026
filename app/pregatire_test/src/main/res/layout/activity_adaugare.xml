@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AdaugareActivity">
+
+    <EditText
+        android:id="@+id/eduard_andrei_et_cod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/introdu_codul_cutiei"/>
+
+    <EditText
+        android:id="@+id/eduard_andrei_et_volum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/introdu_volumul_cutiei"/>
+
+    <Switch
+        android:id="@+id/eduard_andrei_switch_fragil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/este_fragil"/>
+
+    <RatingBar
+        android:id="@+id/eduard_andrei_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:numStars="5"/>
+
+    <Button
+        android:id="@+id/eduard_andrei_btn_salvare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btn_salvare_cutie"/>
+
+</LinearLayout>

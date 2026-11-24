@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">poza3</string>
+    <string name="adauga_cutie">Adauga Cutie</string>
+    <string name="adauga_codul">Adauga codul</string>
+    <string name="adauga_culoarea">Adauga culoarea</string>
+    <string name="este_fragila">Este fragila?</string>
+    <string name="adauga_rating">Adauga rating</string>
+    <string name="salveaza_cutia">Salveaza Cutia</string>
+    <string name="alba">Alba</string>
+    
+    <string-array name="spinner">
+        <item>In</item>
+        <item>cercare</item>
+    </string-array>
+    
+</resources>

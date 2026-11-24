@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdaugareActivity">
+
+    <EditText
+        android:id="@+id/budea_eduard_et_cod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/adauga_codul"/>
+
+    <EditText
+        android:id="@+id/budea_eduard_et_culoare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/adauga_culoarea"/>
+
+    <Switch
+        android:id="@+id/budea_eduard_switch_fragila"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/este_fragila"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/adauga_rating"/>
+    <RatingBar
+        android:id="@+id/budea_eduard_rb_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:numStars="5" />
+
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Incercare radio buton"/>-->
+<!--    <RadioGroup-->
+<!--        android:id="@+id/incercare_radio_grup"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/alba"/>-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Neagra"/>-->
+
+<!--    </RadioGroup>-->
+
+
+    <Button
+        android:id="@+id/budea_eduard_btn_salvare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salveaza_cutia"/>
+
+<!--    <Spinner-->
+<!--        android:id="@+id/incercare_spinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:entries="@id/incercare_spinner"/>-->
+
+
+</LinearLayout>
